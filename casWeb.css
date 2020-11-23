@@ -1,0 +1,138 @@
+
+/*undefined skinning*/
+body{
+  background: #333333;
+  color: #ffffff;
+}
+/*new header*/
+.tl_header_top_row {
+    background: #161616;
+    color: #ffffff;
+}
+.tl_head_promos a {
+    color: #ffffff;;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    border-radius: 0;
+    padding: 0 9px;
+    font-size:14px;
+}
+.tl_head_promos a:hover {
+    color: #ffb700;
+}
+.live_tv_block {
+    height: 34px;
+    margin: 0 3vw;
+}
+.live_tv_block img {
+    max-width: 114px;
+}
+
+/*header buttons*/
+.tl_logged_out .tl_register_button,
+.tl_logged_out .tl_login_button {
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 0 16px;
+    min-width: initial;
+    margin: 0 4px;
+}
+
+.tl_logged_out .tl_register_button {
+    background: #ffb700;
+    color: #000000;
+}
+.tl_logged_out .tl_register_button:hover {
+  background: #ffb700;
+  color: #000000;
+}
+
+.tl_logged_out .tl_login_button {
+  background: undefined;
+  color: #ffffff;
+}
+.tl_logged_out .tl_login_button:hover,
+.tl_acc_lang:hover{
+  background: undefined;
+  color: #ffffff;
+}
+.tl_acc_lang {
+    height: 36px;
+    background: undefined;
+  color: #ffffff;
+    padding: 0 8px;
+}
+.tl_login_container .tl_acc_lang a {
+    padding: 0;
+    font-size: 14px;
+}
+.tl_acc_lang .links_container {
+    background-color:#3D3D3D;
+}
+.tl_acc_lang .links_container a {
+    background-color: #3D3D3D;
+    border-bottom: 1px solid #0a0a0a;
+}
+.tl_acc_lang .links_container a:hover {
+    background-color: #515d6e;
+}
+/*header bottom row*/
+.tl_header_bot_row {
+    background-color: #242424;
+    color:#fff;
+}
+.tl_time{
+    color:#999;
+    font-size:12px;
+}
+/*main navigation*/
+.tl_main_nav > a,
+.tl_main_nav .navItem,
+.tl_main_nav .promoted > a{
+    color: #fff;
+    font-size: 16px;
+}
+.header_nav__dropdown {
+    background-color: #242424;
+    color: #fff;
+}
+.tl_main_nav .header_nav__dropdown a, 
+.header_nav__dropdown a {
+    background-color: #242424;
+    color: #fff;
+    border-bottom: 1px solid #0A0A0A;
+}
+.tl_main_nav .header_nav__dropdown a:hover,
+.header_nav__dropdown a:hover {
+    background-color: #515d6e;
+    color: #fff;
+}
+.New:after, .promoted:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: 'new';
+    width: 23px;
+    height: 15px;
+    line-height: 15px;
+    background: none;
+    background-color: #f0841f;
+    color: #000;
+    font-size: 10px;
+    text-align:center;
+    border-radius: 2px; 
+    font-weight:500;
+    text-transform:capitalize;
+}
+
+/*top casino games*/
+.block_title{
+  background: #000000;
+  color: #fff;
+  border-bottom: 2px solid #ffb700;
+}
+
+
+  

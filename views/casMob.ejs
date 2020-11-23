@@ -1,0 +1,171 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casino mobile</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/assets/mobile/site.css">
+    <link rel="stylesheet" href="/assets/mobile/redesignMobile.css">
+    
+
+
+
+    <link rel="stylesheet" href="/style.css">
+
+
+
+</head>
+<body class="ui-mobile-viewport ui-overlay-d">
+<%- nav %>
+
+<div class="view" style="position: relative;">
+    <div class="view_main">
+        <div id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+            <div class="ui-panel-wrapper">
+                <div class="ui-content">
+                    <!-- top header -->
+                    <div class="casino_h_link_cont">
+                        <div class="tabs-box clr_sec">
+                            <ul class="casino_links_tabs">
+                                <li>
+                                    <a class="ui-link">
+                                        <i class="home_icon"></i>
+                                    </a>
+                                </li>
+                                <% new Array(5).fill().forEach(a => { %>
+                                <li>
+                                    <a class="sportversion ui-link">link</a>
+                                </li>
+                                <% }) %>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- header -->
+                    <div id="header" class="flex alCen bgMain">
+                        <a class="LinkToLeftPanel ui-link"></a>
+                        <a class="LogoMobilePlatform ui-link"></a>
+                        <div id="menu-right" class="flex alCen ns jb">
+                            <a class="platformMobLog btn_sec ns ui-link">log in</a>
+                            <a class="platformMobReg btn_prim ns ui-link">register</a>
+                        </div>
+                    </div>
+
+
+                    <!-- content -->
+                    <div id="content" class="landing">
+                        <ul class="list-menu clearfix two-cols top-row">
+                            <% new Array(5).fill().forEach(a => { %>
+                            <li>
+                                <a class="sportversion ui-link">
+                                    <div class="sport">
+                                        <i></i>
+                                        <strong>Sport</strong>
+                                        <span class="home-description truncate">item description</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <% }) %>
+                            
+                        </ul>
+                    </div>
+
+                    <!-- footer -->
+                    <div id="footer" class="bgMain">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- view 2 -->
+<div class="view" style="position: relative;">
+    <div class="view_main">
+        <div id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+            <div class="ui-panel-wrapper">
+                <div class="ui-content">
+                    <!-- top header -->
+                    <div class="casino_h_link_cont">
+                        <div class="tabs-box clr_sec">
+                            <ul class="casino_links_tabs">
+                                <li>
+                                    <a class="ui-link">
+                                        <i class="home_icon"></i>
+                                    </a>
+                                </li>
+                                <% new Array(5).fill().forEach(a => { %>
+                                <li>
+                                    <a class="sportversion ui-link">link</a>
+                                </li>
+                                <% }) %>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- header -->
+                    <div id="header" class="flex alCen bgMain">
+                        <a class="LinkToLeftPanel ui-link"></a>
+                        <a class="LogoMobilePlatform ui-link"></a>
+                        <div id="menu-right" class="flex alCen ns jb">
+                            <a class="platformMobLog btn_sec ns ui-link">log in</a>
+                            <a class="platformMobReg btn_prim ns ui-link">register</a>
+                        </div>
+                    </div>
+
+
+                    <!-- content -->
+                    <div id="content" class="landing">
+                        <ul class="list-menu clearfix two-cols top-row">
+                            <% new Array(5).fill().forEach(a => { %>
+                            <li>
+                                <a class="sportversion ui-link">
+                                    <div class="sport">
+                                        <i></i>
+                                        <strong>Sport</strong>
+                                        <span class="home-description truncate">item description</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <% }) %>
+                            
+                        </ul>
+                    </div>
+
+                    <!-- footer -->
+                    <div id="footer" class="bgMain">
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+</body>
+
+    
+
+    
+
+    
+<script src="/tinyColor.js"></script>
+<script src="/cuid.js"></script>
+<script src="/neuron.js"></script>
+<script src="/cssTemplates/casMob.js"></script>
+<script src="/skinner.js"></script>
+
+
+</html>

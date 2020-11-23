@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casino web</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/assets/web/site.css">
+    <link rel="stylesheet" href="/assets/web/landingv1.css">
+    
+
+
+
+    <link rel="stylesheet" href="/style.css">
+
+
+
+</head>
+<body>
+<%- nav %>
+
+<div class="view" style="position: relative;">
+    <div class="body_landing">
+        <div id="app" class="toto_landint_container">
+            <!-- header -->
+            <div id="header_fix" class="tl_header_top_row">
+                <div class="tl_header_top_row_fix flex">
+                    <div class="tl_logo">
+                        <a></a>
+                    </div>
+                    <div class="tl_head_promos flex">
+                        <a class="pr main_titles promotions_link">promotion</a>
+                        <a class="pr main_titles promotions_link">promotion</a>
+                        <a class="pr main_titles promotions_link">promotion</a>
+                    </div>
+                    <div class="tl_logged_out flex">
+                        <a class="registerDialog tl_register_button primBtn transBg">register</a>
+                        <a class="loginDialog tl_login_button ternBtn transBg">login</a>
+                    </div>
+                    <div class="tl_drop_down tl_acc_lang flex ternBtn transBg">
+                        <a class="flex dropdown-menu">
+                            <span class="flex-shrink-0 lang en"></span>
+                            <i class="tf_arrow_icon dropdownColor"></i>
+                        </a>
+                        <div class="links_container">
+                            <a class="tl_dropdown_style d-flex px-1 ar">
+                                <span class="flex-grow-1 text-truncate text-left"></span>
+                                <span class="flex-shrink-0 lang ar"></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tl_header_bot_row">
+                <div class="tl_header_bot_row_fix flex">
+                    <div class="tl_time flex">
+                        <span class="time">15:01:34</span>
+                        <span class="zone">GMT+4</span>
+                    </div>
+                    <div class="tl_main_nav flex">
+                        <a class="Spor Bahisleri">sport</a>
+                        <a class="Spor Bahisleri">casino</a>
+                        <div class="header_nav__dropdown_button">
+                            <button class="navItem cp" title="">live lasino</button>
+                            <div class="header_nav__dropdown">
+                                <a>Evolution</a>
+                                <a class="navItemInner loginDialog"><span class="promoted_drop  tr">Pragmatic Play</span></a>
+                                <a class="navItemInner"><span class="promoted_drop  tr">NetEnt</span> </a>
+                                <a class="navItemInner loginDialog">Lucky Streak</a>
+                                <a >Ezugi</a>
+                                <a class="openLogin"><span class="promoted_drop tr"> Vivo Gaming</span></a>
+                            </div>
+                        </div>
+                        <div class="promoted">
+                            <a class="loginDialog navItemInner">Game</a>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- banner -->
+            <div id="bannersCont" class="casino__top_banner">
+                <div class="banner_BG flex" id="main_slider">
+                    <div class="banner_container">
+                        <div id="carousel-example-generic" class="carousel fade">
+                            <div class="car_controls_cont">
+                                <a class="left car_controls">k</a>
+                                <a class="right car_controls">k</a>
+                                <div class="carousel-indicators">
+                                    <div class="active"></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="banner-container-item ">
+                                        <a>
+                                            <img src="/assets/web/banner_md.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main home -->
+            <div id="BannersContainer" class="landing_page">
+                <div class="tl_cont full_width">
+                    <div class="tl_casino full_width"></div>
+                    <div class="topCasino_block full_width">
+                        <p class="block_title">TOP CASINO GAMES</p>
+                        <div class="slot_banners flex_parent flex_wrap_breakpoint">
+                            <% new Array(4).fill().forEach(a => { %>
+                            <a class="tl_game_banner full_img_parent tl_border_line flex_grow">
+                                <img src="/assets/web/banner_sm.png">
+                            </a>
+                            <% }) %>
+                        </div>
+                    </div>
+                    <!-- top matches -->
+                    <div class="matches_block full_width">
+                        <p class="block_title">TOP CASINO GAMES</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- hooter -->
+            <div class="tl_footer_BG">
+                <div class="tl_footer_container">
+                    <div class="tl_footer_links d-flex justify-content-between flex">
+                        <% new Array(4).fill().forEach(a => { %>
+                        <div class="tl_footer_links_row">
+                            <h1>links heading</h1>
+                            <a>link</a>
+                            <a>link</a>
+                            <a>link</a>
+                            <a>link</a>
+                        </div>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+    
+</body>
+
+    
+
+    
+
+    
+<script src="/tinyColor.js"></script>
+<script src="/cuid.js"></script>
+<script src="/neuron.js"></script>
+<script src="/cssTemplates/casWeb.js"></script>
+<script src="/skinner.js"></script>
+
+
+</html>
