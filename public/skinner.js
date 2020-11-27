@@ -10,6 +10,7 @@ class Skinner {
             isDark:false,
             primaryTxt:"#ffffff",
             primaryTxt2:"#cccccc",
+            primaryBgTransparent: "rgba(0,0,0,0.7)",
 
             isBodyBg:false,
             isWidgetGradient:false,
@@ -50,7 +51,7 @@ class Skinner {
             footerBg_g:"#333333",
             footerTxt:"#ffffff",
 
-            borderRadius: 0
+            borderRadius: 2,
 
         }
 
@@ -72,7 +73,6 @@ class Skinner {
         this.applyInitialValues()
         this.generateTheme()
         this.cb(this.skin)
-        console.log(this.skin);
     }
 
     modifyKey(key, value){
@@ -84,8 +84,10 @@ class Skinner {
 
     generateTheme(){
         this.skin.primaryTxt = guessVisibleColor(this.skin.primaryBg)
-        this.skin.primaryBg2 = this.skin.isDark ? tinycolor(this.skin.primaryBg).darken(10).toString() : tinycolor(this.skin.primaryBg).lighten(10).toString()
+        this.skin.primaryBg2 = this.skin.isDark ? tinycolor(this.skin.primaryBg).darken(9).toString() : tinycolor(this.skin.primaryBg).lighten(9).toString()
+        this.skin.primaryBg3 = this.skin.isDark ? tinycolor(this.skin.primaryBg).darken(16).toString() : tinycolor(this.skin.primaryBg).lighten(16).toString()
         this.skin.primaryTxt2 = this.skin.primaryTxt === "#000" ? tinycolor(this.skin.primaryTxt).lighten(20).toString() : tinycolor(this.skin.primaryTxt).darken(20).toString()
+        this.skin.primaryBgTransparent = tinycolor(this.skin.primaryBg).setAlpha(.8).toRgbString()
         
         if(this.skin.isBodyBg){
             this.skin.bodyG = this.skin.bodyBg
@@ -97,7 +99,7 @@ class Skinner {
             this.skin.bodyBg2Hov = this.skin.isDark ? tinycolor(this.skin.bodyBg).darken(7).toString() : tinycolor(this.skin.bodyBg).lighten(7).toString()
             this.skin.bodyBg3Hov = this.skin.isDark ? tinycolor(this.skin.bodyBg).darken(2).toString() : tinycolor(this.skin.bodyBg).lighten(2).toString()
             if(this.skin.isWidgetGradient){
-                this.skin.bodyG = `linear-gradient(0deg, ${this.skin.bodyBg} 0%, ${this.skin.bodyBg_g} 100%);`
+                this.skin.bodyG = `linear-gradient(0deg, ${this.skin.bodyBg} 0%, ${this.skin.bodyBg_g} 100%)`
             }
         }
         else{
@@ -118,7 +120,7 @@ class Skinner {
             this.skin.accentTxt = guessVisibleColor(this.skin.accentBg)
             this.skin.accentBg2 = this.skin.isDark ? tinycolor(this.skin.accentBg).darken(6).toString() : tinycolor(this.skin.accentBg).lighten(6).toString()
             if(this.skin.isAccentGradient){
-                this.skin.accentG = `linear-gradient(0deg, ${this.skin.accentBg} 0%, ${this.skin.accentBg_g} 100%);`
+                this.skin.accentG = `linear-gradient(0deg, ${this.skin.accentBg} 0%, ${this.skin.accentBg_g} 100%)`
             }
         }
         else{
@@ -135,7 +137,7 @@ class Skinner {
             this.skin.headerTxt = guessVisibleColor(this.skin.headerBg)
             this.skin.headerBg2 = this.skin.isDark ? tinycolor(this.skin.headerBg).darken(6).toString() : tinycolor(this.skin.headerBg).lighten(6).toString()
             if(this.skin.isHeaderGradient){
-                this.skin.headerG = `linear-gradient(0deg, ${this.skin.headerBg} 0%, ${this.skin.headerBg_g} 100%);`
+                this.skin.headerG = `linear-gradient(0deg, ${this.skin.headerBg} 0%, ${this.skin.headerBg_g} 100%)`
             }
         }
         else{
@@ -149,7 +151,7 @@ class Skinner {
             this.skin.headingG = this.skin.headingBg
             this.skin.headingTxt = guessVisibleColor(this.skin.headingBg)
             if(this.skin.isHeadingGradient){
-                this.skin.headingG = `linear-gradient(0deg, ${this.skin.headingBg} 0%, ${this.skin.headingBg_g} 100%);`
+                this.skin.headingG = `linear-gradient(0deg, ${this.skin.headingBg} 0%, ${this.skin.headingBg_g} 100%)`
             }
         }
         else{
@@ -163,7 +165,7 @@ class Skinner {
             this.skin.footerG = this.skin.footerBg
             this.skin.footerTxt = guessVisibleColor(this.skin.footerBg)
             if(this.skin.isFooterGradient){
-                this.skin.footerG = `linear-gradient(0deg, ${this.skin.footerBg} 0%, ${this.skin.footerBg_g} 100%);`
+                this.skin.footerG = `linear-gradient(0deg, ${this.skin.footerBg} 0%, ${this.skin.footerBg_g} 100%)`
             }
         }
         else{
@@ -215,6 +217,8 @@ class Skinner {
         this.skin.isFooterBg ? this.footerBg.picker.disabled = false : this.footerBg.picker.disabled = true
         this.skin.isFooterBg && this.skin.isFooterGradient ? this.footerBg.picker2.disabled = false : this.footerBg.picker2.disabled = true
 
+        this.borderRadius.range.value = this.skin.borderRadius
+
     }
     
     createHTML(){
@@ -261,6 +265,7 @@ class Skinner {
         this.borderRadius = this.createRangeControl("borderRadius", this.skinnerContainer, 
             (e)=> {this.modifyKey("borderRadius", e.target.value)}
         )
+
     }
 
     createControlsWrapper(){
@@ -304,8 +309,9 @@ class Skinner {
         
     }
 
-    createRangeControl(label, parent, checkboxCallback, type){
+    createRangeControl(label, parent, checkboxCallback, type, max){
         let _type = type
+        let _max = max
         let _label = document.createElement('label')
         _label.className = "nik_skinner_control_group_label"
         _label.htmlFor = label
@@ -321,6 +327,9 @@ class Skinner {
         }
         else{
           range.type = "range"
+          if(_max){
+            range.max = _max
+          }
           range.className = "nik_skinner_control_group_range"
         }
         
@@ -330,6 +339,11 @@ class Skinner {
         this.wrapper.appendChild(_label)
         this.wrapper.appendChild(range)
         parent.appendChild(this.wrapper)
+
+
+        return {
+            range
+        }
     }
 
     createControl(label, parent, checkboxCallback, gradientCallback, pickerCallback, picker2Callback){
@@ -349,7 +363,7 @@ class Skinner {
         let picker = document.createElement('input')
         picker.type = "color"
         picker.className = "nik_skinner_control_group_picker"
-        picker.addEventListener("change", pickerCallback)
+        picker.addEventListener("input", pickerCallback)
         
 
         let picker2, checkBox2
@@ -358,7 +372,7 @@ class Skinner {
             checkBox2.type = "checkbox"
             checkBox2.className = "nik_skinner_control_group_checkbox"
             checkBox2.id = label + '_g'
-            checkBox2.addEventListener("change", gradientCallback)
+            checkBox2.addEventListener("input", gradientCallback)
             
             picker2 = document.createElement('input')
             picker2.type = "color"

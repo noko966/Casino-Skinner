@@ -22,6 +22,9 @@
 <body>
 <%- nav %>
 
+<div class="view_wrapper">
+
+
 <div class="view" style="position: relative;">
     <div class="body_landing">
         <div id="app" class="toto_landint_container">
@@ -86,7 +89,7 @@
             </div>
 
             <!-- banner -->
-            <div id="bannersCont" class="casino__top_banner">
+            <div id="bannersCont" class="casino__top_banner" style="position: relative;">
                 <div class="banner_BG flex" id="main_slider">
                     <div class="banner_container">
                         <div id="carousel-example-generic" class="carousel fade">
@@ -157,7 +160,187 @@
         </div>
     </div>
 </div>
-    
+
+
+
+
+<div class="view" style="position: relative; order: -1;">
+    <div id="app" class="toto_landint_container">
+        <!-- header -->
+        <div id="header_fix" class="tl_header_top_row">
+            <div class="tl_header_top_row_fix d-flex">
+                <div class="tl_logo">
+                    <a></a>
+                </div>
+                <div class="tl_time d-flex align-items-center">
+                    <span class="time mr-1">14:11:25</span>
+                    <span>GMT+4</span>
+                </div>
+                <div class="d-flex align-items-center px-2">
+                    <a class="tl_simple_link mr-2">link</a>
+                    <a class="tl_simple_link tl_simple_link-accent mr-2 d-flex align-items-center">
+                        <i class="tl_ico-promotions tl_ico"></i>
+                        Promotions
+                    </a>
+                    <a class="tl_simple_link mr-2">link</a>
+                </div>
+
+                <div class="tl_login_container d-flex">
+                    <div class="d-flex align-items-center">
+                        <a class="tl_btn tl_btn-accent mx-1">Register</a>
+                        <a class="loginDialog tl_btn mx-1">Log In</a>
+                        <div class="tl_drop_down tl_acc_lang flex ternBtn transBg">
+                            <a class="flex dropdown-menu">
+                                <span class="flex-shrink-0 lang en"></span>
+                                <i class="tf_arrow_icon dropdownColor"></i>
+                            </a>
+                            <div class="links_container">
+                                <a class="tl_dropdown_style d-flex px-1 ar">
+                                    <span class="flex-grow-1 text-truncate text-left">lang</span>
+                                    <span class="flex-shrink-0 lang ar">lang</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- sub header -->
+        <div class="tl_header_bot_row">
+            <div class="tl_header_bot_row_fix d-flex">
+                <div class="tl_header_navigation">
+                    <a class="tl_main_nav_item  ">Sports</a>
+                    <a class="tl_main_nav_item  ">Sports</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- body home -->
+        <div id="bannersCont" class="casino__top_banner">
+            <div class="casino_backgr_slider_nav flex">
+                <div class="casino_backgr_slider_prev cas_nav_prev flex jc alCen slick-arrow"></div>
+                <div class="casino_backgr_slider_prev cas_nav_prev flex jc alCen slick-arrow"></div>
+                <div class="top_winners__slider_number flex jc alCen">1 / 3</div>
+            </div>
+            <!-- big slider -->
+
+            <div class="casino_backgr_slider slick-initialized slick-slider">
+                <div class="slick-list">
+                    <div class="slick-track">
+                        <div class="casino_backgr__slider_item slick-slide slick-current slick-active" data-slidenumber="1" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 1903px;">
+                            <a class="casino_backgr__image_block">
+                                <img src="/assets/web/banner_lg.jpg" style="opacity: 1;">
+                                <div class="carousel_caption"> </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <div class="save_banner_height" style="height: 426px; position: relative; z-index: -1"></div>
+
+
+        <!-- main content -->
+        <div class="tl_container">
+            <div class="tl_landing_nav_big_wrapper flex_wrap_breakpoint">
+                <% new Array(8).fill().forEach(a => { %>
+                <a href="/Sport" class="tl_landing_nav_big">
+                    <img src="/Img/partners/111/Banners/sport.png">
+                    <p class="nav_title">Sports</p>
+                </a> 
+                <% }) %>
+            </div>
+
+            <div id="MiddleBanners" class="relative tl_landing_nav_big_wrapper flex_wrap_breakpoint">
+                <% new Array(3).fill().forEach(a => { %>
+                <a class="tl_landing_banner">
+					<div>
+						<img src="/assets/web/banner_sm.png">
+					</div>
+                </a>
+                <% }) %>
+            </div>
+
+
+            <div class="top_cas_games__slider_block">
+                <div class="top_cas_games__slider_nav d-flex justify-content-between align-items-center my-1">
+                    <p class="tl_widget_heading">TOP CASINO GAMES</p>
+                    <div class="top_cas_games__slider_nav_box flex">
+                        <div class="top_cas_games__slider_prev cas_nav_prev flex jc alCen slick-arrow slick-hidden"></div>
+                        <div class="top_cas_games__slider_next cas_nav_prev flex jc alCen slick-arrow slick-hidden"></div>
+                    </div>
+                </div>
+
+                <div class="top_cas_games__slider slick-initialized slick-slider">
+                    <div class="slick-list">
+                        <div class="slick-track">
+                            <div class="tl_games_slider_page_wrapper slick-slide slick-current slick-active">
+                                <div class="tl_games_slider_page">
+                                    <div class="tl_games_slider_page_banner">
+                                        <a class="tl_games_slider_game">
+                                            <div>
+                                                <img src="/assets/web/banner_sm.png" style="opacity: 1;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="tl_games_slider_page_rest">
+                                        <% new Array(8).fill().forEach(a => { %>
+                                        <a class="tl_games_slider_game" href="/casino" target="_blank" tabindex="0">
+                                            <div>
+                                                <img src="/assets/web/banner_sm.png" style="opacity: 1;">
+                                            </div>
+                                        </a>
+                                        <% }) %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center my-2">
+                    <button class="toTop tl_btn">
+                        <i class="tl_ico tl_ico-arrow-top"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tl_footer">
+            <div class="tl_container">
+                <div class="d-flex justify-content-between mb-2">
+                    <% new Array(5).fill().forEach(a => { %>
+
+                    <div class="tl_footer_links_wrapper">
+                        <span class="tl_footer_links_heading">Link</span>
+                        <a class="tl_footer_link">About Us</a>
+                        <a class="tl_footer_link">Terms and Conditions</a>
+                        <a class="tl_footer_link">Privacy Policy</a>
+                        <a class="tl_footer_link">Responsible Gambling</a>
+                        <a class="tl_footer_link">Betting Rules</a>
+                    </div>
+                    <% }) %>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+        
+</div>
 </body>
 
     

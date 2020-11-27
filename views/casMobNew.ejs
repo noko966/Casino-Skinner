@@ -1,0 +1,1002 @@
+<html lang="en" class="ui-mobile">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>casino mobile</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/mobile/jquery.mobile.css">
+    <link rel="stylesheet" href="/assets/mobile/site.css">
+    <link rel="stylesheet" href="/assets/mobile/redesignMobile.css">
+
+    <link rel="stylesheet" href="/style.css">
+
+
+
+</head>
+<body class="ui-mobile-viewport ui-overlay-d">
+<%- nav %>
+
+<div class="view_wrapper">
+
+
+
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+
+    
+        <div class="ui-panel-wrapper">
+            <div class="ui-content">
+                <!-- header -->
+                <div class="casino_h_link_cont">
+                    <div class="tabs-box clr_sec">
+                        <ul class="casino_links_tabs">
+                            <li>
+                                <a class="ui-link">
+                                    <i class="home_icon"></i>
+                                </a>
+                            </li>
+                            <% new Array(4).fill().forEach(a => { %>
+                            <li>
+                                <a class="sportversion ui-link">Sport</a>
+                            </li>
+                            <% }) %>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- main header -->
+                <div class="flex alCen bgMain" id="header">
+                    <a class="LinkToLeftPanel ui-link"></a>
+                    <a class="LogoMobilePlatform ui-link"></a>
+                    <div id="menu-right" class="flex alCen ns jb">
+                        <a class="platformMobLog btn_sec ns ui-link">Log In</a>
+                        <a class="platformMobReg btn_prim ns ui-link">Register</a>
+                    </div>
+                </div>
+
+
+                <!-- landing home -->
+                <div class="landing_contet">
+                    <div class="tl_cont flex-wrap full_width">
+
+                        <div class="tl_navigation flex_parent flex-wrap full_width">
+                                <% new Array(8).fill().forEach(a => { %>
+                                <a class="tl_nav_link sportversion ui-link">
+                                <div class="nav_item">
+                                    <img src="/assets/mobile/menu_icon.png">
+                                    <p class="nav_title">Sports</p>
+                                </div>
+                                </a>
+                                <% }) %>
+                        </div>
+
+                        <div id="MiddleBannersMob" class="tl_casino_bottom flex_parent flex_wrap_breakpoint middle_banner_mob">
+                            <div class="flex padding_inner">
+                                <% new Array(4).fill().forEach(a => { %>
+                                <a class="tl_casino_banner tl_border_line full_img_parent ui-link">
+                                    <img src="/assets/mobile/banner_mob_2.jpg">
+                                </a>
+                                <% }) %>
+                            </div>
+                        </div>
+                        <!-- top casino gamse -->
+                        <div class="topCasino_block">
+                            <p class="name_vidget">TOP CASINO GAMES</p>
+                            <div class="slot_banners">
+                                <% new Array(6).fill().forEach(a => { %>
+                                <a class="ui-link">
+                                    <img src="/assets/mobile/game.jpg">
+                                </a>
+                                <% }) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- footer -->
+                <div id="footer" class="bgMain">
+
+                    <div class="drop_down_lang_arrow">
+                        <span class="mob_select_lang_flag lang_width lang"></span>
+                        <span class="drop_down_lang__front_el">en</span>
+                        <select class="drop_down_lang">
+                            <option value="">en</option>
+                        </select>
+                    </div>
+
+
+                    <!-- socials -->
+                    <ul class="horizontal-list clearfix">
+                        <li class="licenses clearfix license_block">
+                            <ul>
+                                <li>
+                                    <a class="twitterif ui-link"></a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="payments clearfix">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- <div class="asd" style="height: 8000px;"></div> -->
+            </div>
+        </div>
+
+
+        <!-- left panel -->
+        <div id="left-panel" class="panel bgMain  ui-panel ui-panel-position-left ui-panel-display-push ui-body-b ui-panel-animate">
+            <div class="ui-panel-inner">
+                <div class="lm__container flex flexCol">
+                    <div class="lm__blocks flex jb">
+                        <a class="lm__block lm_support flex flexCol jc alCen ui-link">24/7 Support</a>
+                        <a class="lm__block lm_promo flex flexCol jc alCen ui-link">Promotions</a>
+                    </div>
+                    <div class="lm__links">
+                        <ul class="lm__links_block">
+                            <li class="lm_link">
+                                <a class="lm_home ui-link">Home</a>
+                            </li>
+                        </ul>
+
+                        <h3 class="lm__title"></h3>
+
+                        <ul class="lm__links_block">
+                            <li class="lm_link">
+                                <a class="lm_sports sportversion ui-link">Sport</a>
+                            </li>
+                            <li class="lm_link">
+                                <a class="lm_sports sportversion ui-link">Sport</a>
+                            </li>
+                            <li class="lm_link">
+                                <a class="lm_sports sportversion ui-link">Sport</a>
+                            </li>
+                            <li class="lm_link">
+                                <a class="lm_sports sportversion ui-link">Sport</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- right panel -->
+        <div id="right-panel" class="panel bgMain  ui-panel ui-panel-position-right ui-panel-display-push ui-body-b ui-panel-animate">
+            <div class="ui-panel-inner">
+                <div id="sidebar-user" class="panel PlatformLoggedUser bgMain ">
+                    <div class="acc_logo">
+                        <div class="right_logo"></div>
+                        <div class="right_menu_close">✖</div>
+                        <p class="account_title">My Account</p>
+                        <p class="playerId">Account ID: 259486</p>
+                        <a class="menuRow flex alCen menu_new menu_account ui-link">
+                            Profile:
+                            <span>Profile Name</span>
+                        </a>
+                        <a class="menuRow flex alCen menu_new menu_inbox ui-link">
+                            <i class="symbol ic"></i>
+                            <span>Inbox</span>
+                        </a>
+                        <a class="menuRow flex alCen menu_new menu_account ui-link">
+                            Balance:
+                            <span>10 0051 USD</span>
+                        </a>
+                        <div class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content">
+                            <h1 class="menuBtn ui-collapsible-heading" id="accountMob">
+                                <a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-minus">
+                                    Account
+                                    <span class="ui-collapsible-heading-status">click to collapse contents</span>
+                                </a>
+                            </h1>
+                            <div class="ui-collapsible-content ui-body-inherit">
+                                <a class="menuBtn flex alCen ui-link">My Account</a>
+                                <a class="menuBtn flex alCen ui-link">Profile</a>
+                                <a class="menuBtn flex alCen ui-link">Change Password</a>
+                            </div>
+                            <a class="menuBtn flex alCen ui-link">Bonuses</a>
+                            <a class="menuBtn flex alCen ui-link">Log Out</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+</div>
+
+
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+
+    
+        <div class="ui-panel-wrapper">
+            <div class="ui-content">
+                <!-- header -->
+                <div class="casino_h_link_cont">
+                    <div class="tabs-box clr_sec">
+                        <ul class="casino_links_tabs">
+                            <li>
+                                <a class="ui-link">
+                                    <i class="home_icon"></i>
+                                </a>
+                            </li>
+                            <% new Array(4).fill().forEach(a => { %>
+                            <li>
+                                <a class="sportversion ui-link">Sport</a>
+                            </li>
+                            <% }) %>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- main header logged in -->
+                <div class="flex alCen bgMain" id="header">
+                    <a class="LinkToLeftPanel ui-link"></a>
+                    <a class="LogoMobilePlatform ui-link"></a>
+                    <div id="menu-right" class="flex alCen ns jb">
+                        <a class="flex alCen btn_deposit ui-link">Deposit</a>
+                        <div class="user_info flex alCen">
+                            <a class="user pos_rel ui-link">
+                                <i class="symbol ic">$</i>
+                            </a>
+                            <div class="flex user_balance">
+                                <a id="playerBalance" class="txt ui-link">10.005 USD</a>
+                                <a class="txt ui-link">userName</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- landing home -->
+                <div class="landing_contet">
+                    <div class="tl_cont flex-wrap full_width">
+
+                        <div class="tl_navigation flex_parent flex-wrap full_width">
+                                <% new Array(8).fill().forEach(a => { %>
+                                <a class="tl_nav_link sportversion ui-link">
+                                <div class="nav_item">
+                                    <img src="/assets/mobile/menu_icon.png">
+                                    <p class="nav_title">Sports</p>
+                                </div>
+                                </a>
+                                <% }) %>
+                        </div>
+
+                        <div id="MiddleBannersMob" class="tl_casino_bottom flex_parent flex_wrap_breakpoint middle_banner_mob">
+                            <div class="flex padding_inner">
+                                <% new Array(4).fill().forEach(a => { %>
+                                <a class="tl_casino_banner tl_border_line full_img_parent ui-link">
+                                    <img src="/assets/mobile/banner_mob_2.jpg">
+                                </a>
+                                <% }) %>
+                            </div>
+                        </div>
+                        <!-- top casino gamse -->
+                        <div class="topCasino_block">
+                            <p class="name_vidget">TOP CASINO GAMES</p>
+                            <div class="slot_banners">
+                                <% new Array(6).fill().forEach(a => { %>
+                                <a class="ui-link">
+                                    <img src="/assets/mobile/game.jpg">
+                                </a>
+                                <% }) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+
+
+                <!-- <div class="asd" style="height: 8000px;"></div> -->
+            </div>
+        </div>
+
+
+
+    </div>
+    
+
+</div>
+
+
+
+<!-- casino -->
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+
+    
+        <div class="ui-panel-wrapper">
+            <div class="ui-content">
+                <!-- header -->
+                <div class="casino_h_link_cont">
+                    <div class="tabs-box clr_sec">
+                        <ul class="casino_links_tabs">
+                            <li>
+                                <a class="ui-link">
+                                    <i class="home_icon"></i>
+                                </a>
+                            </li>
+                            <% new Array(4).fill().forEach(a => { %>
+                            <li>
+                                <a class="sportversion ui-link">Sport</a>
+                            </li>
+                            <% }) %>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- main header logged in -->
+                <div class="flex alCen bgMain" id="header">
+                    <a class="LinkToLeftPanel ui-link"></a>
+                    <a class="LogoMobilePlatform ui-link"></a>
+                    <div id="menu-right" class="flex alCen ns jb">
+                        <a class="flex alCen btn_deposit ui-link">Deposit</a>
+                        <div class="user_info flex alCen">
+                            <a class="user pos_rel ui-link">
+                                <i class="symbol ic">$</i>
+                            </a>
+                            <div class="flex user_balance">
+                                <a id="playerBalance" class="txt ui-link">10.005 USD</a>
+                                <a class="txt ui-link">userName</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- casino home -->
+                <div id="casinoIndexContent">
+                    <!-- casino slider -->
+                    <div class="with_shadow_slider">
+                        <div id="mobileSlider" class="nc__slider_block w100">
+                            <ul class="slides slick-initialized slick-slider slick-dotted">
+                                <div class="slick-list draggable">
+                                    <div class="slick-track">
+                                        <li class="slick-slide">
+                                            <a class="ui-link">
+                                                <img src="/assets/mobile/banner_mob_2.jpg" style="opacity: 1;">
+                                            </a>
+                                            <div class="carousel-caption"></div>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <div class="casino__container">
+                        <div class="most_liked__games">
+                            <div class="name_vidget">MOST LIKED</div>
+                            <ul class="most_liked__games_cont flex" id="most_liked" style="width: 100%;">
+                                <% new Array(4).fill().forEach(a => { %>
+                                <div class="game__block">
+                                    <div class=""></div>
+                                    <div class="game__main">
+                                        <img class="" src="/assets/mobile/game.jpg">
+                                    </div>
+                                </div>
+                                <% }) %>
+                            </ul>
+                        </div>
+
+
+                        <div id="provider_list" class="provider_list_content">
+                            <div class="links_block_x_scroll_hidden casino-tab-container">
+                                <ul class="casino_nav__links_block flex">
+                                    <li class="flex alcen">
+                                        <a class="None casino_nav_links_mob  active ui-link">TOP GAMES</a>
+                                    </li>
+                                    <li class="flex alcen">
+                                        <a class="New None casino_nav_links_mob ui-link">GAMES</a>
+                                    </li>
+                                    <% new Array(4).fill().forEach(a => { %>
+                                    <li class="flex alcen">
+                                        <a class="None casino_nav_links_mob ui-link">GAMES</a>
+                                    </li>
+                                    <% }) %>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div id="content" class="content_new_styles">
+                        <div id="gamecontainer" class="games_block disp_grid__block">
+                            <% new Array(8).fill().forEach(a => { %>
+                            <div class="mason_item ">
+                                <div class="game__block">
+                                    <div class=""></div>
+                                    <div class="game__main">
+                                        <img src="/assets/mobile/game.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <% }) %>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="casino__fixed_menu fixed w100" style="position: relative;">
+                    <ul class="fixed_menu__ul flex">
+                        <li class="menu_circle"></li>
+                        <li class="fixed_menu__li flex flexcol alcen jc active" id="playinIndex">
+                            <span class="fixed_menu__icon ic_games"></span>
+                            <span class="fixed_menu__text">Home</span>
+                        </li>
+                        <li class="fixed_menu__li flex flexcol alcen jc" id="promosMob">
+                            <span class="fixed_menu__icon ic_promotion"></span>
+                            <span class="fixed_menu__text">Promotions</span>
+                        </li>
+                        <li class="fixed_menu__li fixed_menu__li_play flex flexcol alcen jc" id="casinoplay">
+                            <a class="fixed_menu__icon fixed_menu__play_button ui-link"> </a>
+                            My Casino
+                        </li>
+                        <li class="fixed_menu__li flex flexcol alcen jc filter_icon__block" id="searchTab">
+                            <span class="fixed_menu__icon ic_search"></span>
+                            <span class="fixed_menu__text">Search</span>
+                        </li>
+                        <li class="fixed_menu__li flex flexcol alcen jc filter_icon__block gotofilter" id="filterTab">
+                            <span class="fixed_menu__icon ic_filter"></span>
+                            <span class="fixed_menu__text">Filter</span>
+                        </li>
+                    </ul>
+                </div>
+                
+
+
+                
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+    
+
+</div>
+
+
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+        <div class="heading deposit_heading">Deposit</div>
+        <div id="content_paym" class="bgMain depositForms">
+            <p class="paym_txt1">payment text</p>
+            <div class="collapse_btn paymentTypes ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed">
+                <h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                    <a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-inherit ui-icon-arrow-r">
+                        method name
+                        <span class="ui-collapsible-heading-status">click to expand contents</span>
+                    </a>
+                </h3>
+                <div class="ui-collapsible-content ui-body-b ui-collapsible-content-collapsed">
+                    <div class="collapse_content">
+                        <p class="paym_txt">Deposit with This Method</p>
+                        <div class="image-box-depwith">
+                            <div class="paymentmethods isettlecreditcard"></div>
+                        </div>
+                        <div class="paym_cond">
+                            Min. <span class="min_amount">10 USD</span>
+                        </div>
+                        <div class="paym_cond">
+                            Max. <span class="min_amount">10 000 USD</span>
+                        </div>
+                        <div id="contisettlecreditcard">
+                            <form id="isettlecreditcard" class="methods">
+                                <div class="row">
+                                    <span class="required-field">*</span>
+                                    <label>Amount</label>
+                                    <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+                                        <input class="inp" type="text">
+                                    </div>
+                                    <p>
+                                        <span class="field-validation-valid"></span>
+                                    </p>
+                                </div>
+                                <div class="spacer">
+                                    <a class="btn_prim block ui-link">Deposit</a>
+                                </div>
+                                <span class="field-validation-valid"></span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse_btn paymentTypes ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content">
+                <h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                    <a class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-left ui-btn-inherit ui-icon-arrow-r">
+                        method name
+                        <span class="ui-collapsible-heading-status">click to expand contents</span>
+                    </a>
+                </h3>
+                <div class="ui-collapsible-content ui-body-b">
+                    <div class="collapse_content">
+                        <p class="paym_txt">Deposit with This Method</p>
+                        <div class="image-box-depwith">
+                            <div class="paymentmethods isettlecreditcard"></div>
+                        </div>
+                        <div class="paym_cond">
+                            Min. <span class="min_amount">10 USD</span>
+                        </div>
+                        <div class="paym_cond">
+                            Max. <span class="min_amount">10 000 USD</span>
+                        </div>
+                        <div id="contisettlecreditcard">
+                            <form id="isettlecreditcard" class="methods">
+                                <div class="row">
+                                    <span class="required-field">*</span>
+                                    <label>Amount</label>
+                                    <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+                                        <input class="inp" type="text">
+                                    </div>
+                                    <p>
+                                        <span class="field-validation-valid"></span>
+                                    </p>
+                                </div>
+                                <div class="spacer">
+                                    <a class="btn_prim block ui-link">Deposit</a>
+                                </div>
+                                <span class="field-validation-valid"></span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+        <div class="heading">My Account</div>
+        <div id="content" class="mobPlUserCont bgMain">
+            <div>
+                <div class="successmassage">some message</div>
+                <table class="data-tbl2 tbl-list">
+                    <thead>
+                        <tr class="accRowClr">
+                            <td class="accHeading" colspan="2">User Name</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="accRowClr">
+                            <td>Email</td>
+                            <td>
+                                <div class="truncate email_mobile" id="accountemail">myuser@mailinator.com</div>
+                            </td>
+                        </tr>
+                                        <tr class="accRowClr">
+                            <td>Mobile</td>
+                            <td>
+                                <div class="truncate email_mobile" id="accountemail">+37445453343</div>
+                            </td>
+                        </tr>
+                    <tr class="accRowClr">
+                        <td>Balance</td>
+                        <td><a class="dis_block balance_withdrawal btn_sec ui-link">0.00 USD</a></td>
+                    </tr>
+                    <tr class="accRowClr">
+                        <td>Withdrawable</td>
+                        <td><a class="balance_withdrawal btn_prim dis_block ui-link">0.00 USD</a></td>
+                    </tr>
+                </tbody>
+                </table>
+                <table class="data-tbl2 tbl-list">
+                    <thead>
+                        <tr class="accRowClr">
+                            <td colspan="2">Email</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="accRowClr">
+                            <td><a id="verificationEmail" class="dis_block btn_prim fright ui-link">Verify Email</a></td>
+                        <td class="">
+                            <div class="successmassage" id="EmailVerifie">some message</div>
+                            <div class="successmassage" id="EmailVerifieError">some message</div>
+                        </td>
+                    </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+        <div class="ui-panel-wrapper">
+            <div class="heading">INBOX</div>
+            <div id="content" class="bgMain inbox_bg">
+                <div id="inbox" class="clean-table tl_inbox_main">
+                    <div class="tl_my_inbox_mails_cont"></div>
+                    <div class="tl_msg_button_cont">
+                        <a class="btn_prim fright dis_block ui-link">New message</a>
+                    </div>
+                </div>
+            </div>
+
+            <a class="ui-link">
+                <div class="heading tl_mail_header">Message</div>
+                <div id="content" class="bgMain">
+                    <div class="tl_mail_message_cont">
+                        <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+                            <input class="tl_mail_send_input" type="text">
+                        </div>
+                    </div>
+                    <textarea class="tl_mail_send_area ui-input-text ui-shadow-inset ui-body-inherit ui-corner-all ui-textinput-autogrow" placeholder="Type your message here" style="height: 50px;"></textarea>
+                    <div class="flex">
+                        <div>
+                            <i class="tl_mail_attachfiel_screp"></i>
+                        </div>
+                        <div id="attachfile_btn" class="tl_mail_attachfiel_download_btn">Attach file</div>
+                    </div>
+                    <div class="send_btn_block">
+                        <div id="send_btn" class="btn_prim fright send_btn_display">send</div>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+        <div class="ui-panel-wrapper">
+            <div class="heading">PROFILE</div>
+            <form action="">
+                <div id="content" class="bgMain">
+                    <div id="profileContainer" class="data-form profile_container">
+                        <div class="subHeading">PERSONAL DETAILS</div>
+                        <div class="successmassage">some message</div>
+                        <% new Array(4).fill().forEach(a => { %>
+                        <div class="reg_prof__element_row">
+                            <label for="Account_ID">Account ID</label>
+                            <div class="ui-input-text ui-body-inherit ui-corner-all ui-state-disabled ui-shadow-inset">
+                                <input disabled="disabled" id="Id" name="Id" type="text" value="259486">
+                            </div>
+                        </div>
+                        <% }) %>
+                        <div class="reg__gender_row" id="genderMob">
+                            <div class="col50" id="maleMob"><div class="ui-radio"><label class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-on">Male </label><input checked="checked" id="radio01" name="Gender" type="radio" value="True" data-cacheval="false"></div>
+                            </div>
+        
+                            <div class="col50" id="femaleMob"><div class="ui-radio"><label class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-radio-off">Female </label><input id="radio02" name="Gender" type="radio" value="False" data-cacheval="true"></div>
+                            </div>
+                        </div>
+
+                        <div class="reg_prof__element_row pos_rel">
+                            <label for="LanguageId">Language</label>
+                            <select class="custon_select__front_el"id="userlanguage">
+                                <option selected="selected" value="EN">English</option>
+                            </select>
+                        </div>
+
+                        <div class="reg_prof__element_row">
+                            <span class="required-field">*</span>
+                            <label for="CountryCode">Country</label>
+                            <div class="ui-select">
+                                <div id="CountryCode-button" class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-corner-all ui-shadow ui-state-disabled">
+                                <span class="drop-down">Armenia</span>
+                                <select class="drop-down mobile-selectmenu-disabled">
+                                    <option value="">- Select Country -</option>
+            
+                                </select>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="reg_prof__element_row">
+                            <button class="btn_prim width_all ui-btn ui-shadow ui-corner-all">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- change password -->
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+        <div class="ui-panel-wrapper">
+            <div class="heading">Pending Withdrawals</div>
+            <div id="content" class="bgMain">
+                <div class="filter-block">
+                    <div class="search_popup_row">
+                        <label>Period</label>
+                        <div class="ui-select">
+                            <div id="period-button" class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-corner-all ui-shadow">
+                                <span class="drop-down">Last 30 Days</span>
+                                <select class="drop-down valid" data-val="false" id="period">
+                                    <option value="1">Last 7 Days</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search_popup_row">
+                        <label for="start-date">From</label>
+                        <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+                            <input class="date-picker hasDatepicker">
+                        </div>
+                    </div>
+                    <div class="search_popup_row">
+                        <label for="start-date">To</label>
+                        <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+                            <input class="date-picker hasDatepicker">
+                        </div>
+                    </div>
+                    <div class="search_popup_row">
+                        <button class="cashier__history_show btn_prim width_all ui-btn ui-shadow ui-corner-all" id="search_button">Search</button>
+                    </div>
+                </div>
+                
+                <div class="clean-table"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- change password -->
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+        <div class="ui-panel-wrapper">
+            <div class="heading">Change Password</div>
+            <div id="content" class="bgMain">
+                <form>
+                    <div class="clearfix">
+                        <div class="data-form-block">
+                            <div class="successmassage">some message</div>
+                            <div class="limited-width">
+                                <div class="changepass__element_row eye_block">
+                                    <span class="required-field">*</span>
+                                    <label>Current Password</label>
+                                    <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+                                        <input id="OldPassword" type="password">
+                                    </div>
+                                </div>
+                                <div class="changepass__element_row eye_block">
+                                    <span class="required-field">*</span>
+                                    <label>New Password</label>
+                                    <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+                                        <input id="OldPassword" type="password">
+                                    </div>
+                                </div>
+                                <div class="changepass__element_row eye_block">
+                                    <span class="required-field">*</span>
+                                    <label>Confirm Password</label>
+                                    <div class="ui-input-text ui-body-inherit ui-corner-all ui-shadow-inset">
+                                        <input id="OldPassword" type="password">
+                                    </div>
+                                </div>
+                                <div class="changepass__element_row">
+                                    <label>&nbsp;</label>
+                                    <button id="save_pass_d" class="btn_prim width_all ui-btn ui-shadow ui-corner-all">Save password</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- change password -->
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+        <div class="ui-panel-wrapper">
+            <div id="bonusesNavBar" class="navigation-bar clearfix">
+                <div class="heading">Bonuses</div>
+                <a class="tab_item active ui-link">New Bonuses</a>
+                <a class="tab_item  ui-link">Bonus History</a>
+            </div>
+            <div id="bonuses_content" class="bgMain bg_bonuses">
+                <div class="filter-block mt-20">
+                    <div class="search_popup_row item clearfix mt-10">
+                        <label for="type">Bonus Type</label>
+                        <div class="ui-select">
+                            <div id="bonusType-button" class="ui-btn ui-icon-carat-d ui-btn-icon-right ui-corner-all ui-shadow">
+                                <span class="drop-down">All Bonuses</span>
+                                <select id="bonusType" class="drop-down valid" aria-invalid="false">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search_popup_row">
+                    <button class="cashier__history_show btn_prim width_all ui-btn ui-shadow ui-corner-all" id="search_button">Search</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+           
+<!-- promotions -->
+<div class="view view_mob">
+    <div style="position: relative;" id="wrapper" class="wrapper ui-page ui-page-theme-d ui-page-active">
+        <div class="ui-panel-wrapper">
+            <div id="promotionContent">
+                <div id="promo_cont">
+                    <div class="nav clearfix prom_top">
+                        <div class="filters_cont">
+                            <a class="tl_prom_filters btn_sec  promo_clicked" id="0" val="0">
+                                <i class="tl_prom_icon promo_all_icon"></i>
+                                <span class="nm">All</span>
+                            </a>
+                            <a class="tl_prom_filters btn_sec">
+                                <i class="tl_prom_icon promo_casino_icon"></i>
+                                <span class="nm">Casino</span>
+                            </a>
+                            <a class="tl_prom_filters btn_sec">
+                                <i class="tl_prom_icon promo_sport_icon"></i>
+                                <span class="nm">Sport</span>
+                            </a>
+                            <a class="tl_prom_filters btn_sec">
+                                <i class="tl_prom_icon promo_games_icon"></i>
+                                <span class="nm">Games</span>
+                            </a>
+                            <a class="tl_prom_filters btn_sec">
+                                <i class="tl_prom_icon promo_other_icon"></i>
+                                <span class="nm">Other</span>
+                            </a>
+                    </div>
+                    </div>
+                    <div id="content">
+                        <article class="clearfix">
+                            <ul id="promo-list">
+                                <li class="clearfix">
+                                    <div class="promo_mobile_cont">
+                                        <div class="second_cont" style="flex-direction: column; width: 100%;">
+                                            <img class="promo_img" src="/assets/mobile/promo.jpg">
+                                            <div class="promo_mobile_text_cont">
+                                                <div class="promo_mobile_title">Drops &amp; Wins </div>
+                                                <div class="promo_mobile_descr">
+                                                    <p>Enjoy the prizes!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="tl_promotions_more_info prm_link">See More</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- search -->
+            <div id="searchContent">
+                <div class="popup_flex_box" style="position: relative; width: 100%;">
+                    <div class="games_filter_popup" style="overflow: hidden;">
+                        <div class="switcher_block">
+                            <div id="advancedSearch" class="switcher_label">Advanced search <span class="search_switcher"></span></div>
+                        </div>
+                        <div class="games_search_content">
+                            <div class="nc__heading">Search</div>
+                            <div class="search-container casino-tab-container fs__input_wrap">
+                                <span class="blinking_cursor" style="display: none;"></span>
+                                <input class="search search_filter_input" id="search" type="text" placeholder="Find Games">
+                                <a id="close_btn__search" class="close-search" style="display: inline;"></a>
+                            </div>
+                            <div class="searchContentGame header filter__inner" id="autocomplete-div">
+       
+                            </div>
+                        </div>
+                        <div class="games_filter_content flex flexcol">
+                            <div class="nc__heading">GAME FILTER</div>
+                            <div class="filter__inner">
+                            <div class="filter_search_content fs__input_wrap">
+                                <span class="blinking_cursor"></span>
+                                <input class="search_filter_input" id="filterSearchWord" placeholder="Find Games" autofocus="fasle">
+                                <a class="close-search"></a>
+                            </div>
+                            <div class="games_filter_title">Categories</div>
+                            <ul id="categories" class="games_filter_list flex">
+                                <li class="games_filter_element animate active All">All</li>
+                                <li class="games_filter_element animate">Slots</li>
+                                <li class="games_filter_element animate">Slots</li>
+                                <li class="games_filter_element animate">Slots</li>
+                                <li class="games_filter_list_show"></li>
+                            </ul>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+    
+</body>
+
+    
+
+    
+
+    
+<script src="/tinyColor.js"></script>
+<script src="/cuid.js"></script>
+<script src="/neuron.js"></script>
+<script src="/cssTemplates/casMobNew.js"></script>
+<script src="/skinner.js"></script>
+
+
+<script>
+
+    let leftPanel = document.getElementById('left-panel')
+    let rightPanel = document.getElementById('right-panel')
+
+    
+
+
+    function showPanel(el){
+        if(el.classList.contains("transform_none")){
+            el.classList.remove("transform_none")
+        }
+        else{
+            el.classList.add("transform_none")
+        }
+    }
+
+
+
+
+    
+
+
+</script>
+
+
+</html>

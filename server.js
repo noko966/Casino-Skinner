@@ -23,6 +23,8 @@ const renderNavigation = (req, res, next) => {
     <div class="nik_skinner_link_wrapper">
         <a class="nik_skinner_link" href="/casWeb">casino web</a>
         <a class="nik_skinner_link" href="/casMob">casino mobile</a>
+        <a class="nik_skinner_link" href="/casMobNew">casino mobile new</a>
+
     </div>
     `
     next()
@@ -43,10 +45,17 @@ const renderMobileView = (req, res) => {
     })
 }
 
+const renderMobileNewView = (req, res) => {
+    res.render("casMobNew", {
+        nav: req.nav
+    })
+}
 
 app.get("/", renderWebView)
 app.get("/casWeb",  renderWebView)
 app.get("/casMob",  renderMobileView)
+app.get("/casMobNew",  renderMobileNewView)
+
 
 
 

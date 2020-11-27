@@ -23,6 +23,7 @@ body{
 .nik_skinner_link{
     appearance: none;
     min-width: 100px;
+    padding: 0 10px;
     text-align: center;
     height: 30px;
     line-height: 30px;
@@ -45,7 +46,8 @@ body{
 
 
 .nik_skinner_control_wrapper{
-    background-color: #161616;
+    background-color: rgba(0,0,0,0.5);
+    backdrop-filter: blur(2px);
     color: #fff;
     border-radius: 10px 10px 0 0;
     position: fixed;
@@ -55,7 +57,7 @@ body{
     padding: 20px;
     border: 5px solid #222;
     min-width: 400px;
-    z-index: 100;
+    z-index: 9999;
 }
 
 .nik_skinner_control_group{
@@ -140,4 +142,28 @@ body{
 
 .nik_skinner_download_button:hover{
     background-color: #cc801d;
+}
+
+.view_mob{
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+#right-panel, #left-panel{
+    position: absolute;
+    visibility: visible;
+}
+
+.transform_none{
+    transform: translate3d(0,0,0) !important;
+}
+
+.view_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.view_wrapper > .view{
+    margin: 0 30px;
 }
